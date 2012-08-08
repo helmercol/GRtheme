@@ -34,7 +34,7 @@
 <!-- Inicio footer -->
 	<footer>
 		<div class="creditos">
-			<p>galvisrojas.eu funciona con WordPress y grtheme by <a href="http://twitter.com/helmercol">@helmercol</a> y <a href="http://hgrdesign.es">HGR Design</a></p>
+			<p>GRtheme funciona con <a href="http://wordpress.org/" target="_blank">WordPress</a> Theme por <a href="http://twitter.com/helmercol">@helmercol</a> y <a href="http://hgrdesign.es">HGR Design</a></p>
 		</div>
 	</footer>
 <!-- FIN footer -->
