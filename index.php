@@ -8,9 +8,7 @@
 		
 		<div class="postindex">
 		
-		<?php if (  (function_exists('dp_attachment_image')) && (dp_attachment_image())) : ?>
-		<?php dp_attachment_image($post->ID, 'index', 'alt="' . $post->post_title . '"'); ?>
-		<?php endif;?>
+		<?php the_post_thumbnail('index'); ?>
 		
 		<div class="mask">
 		 <!-- Mostramos el titulo con el enlace al post. -->

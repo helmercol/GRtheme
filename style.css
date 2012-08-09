@@ -566,10 +566,9 @@ Version: 0.1
 	#comments p {
 		background: url(images/bg-full.png);
 		color: #707070;
-		margin: 10px 0;
-		padding: 20px;
+		padding: 10px 20px;
 		font-size: 1.4em;
-		line-height: 1.6em;
+		line-height: 1.5em;
 		clear: both
 	}
 	#comments .reply {
