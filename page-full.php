@@ -13,17 +13,17 @@ get_header(); ?>
 		?>
 		
 		<!-- Empieza la página -->
-		<div class="entry">
+		<article class="entry">
 		<h2 class="full"><?php the_title(); ?></h2>
 		<?php the_content(); ?>
-		</div><!-- FIN página -->
+		</article><!-- FIN página -->
 		
 		<?php else : ?>
 		
-		<div class="notfound">
+		<article class="notfound">
 			<h2>Not Found</h2>
 			<p>Sorry, but you are looking for something that is not here.</p>
-		</div>
+		</article>
 		<?php endif; ?>
 		
 	</div><!-- FIN contenido -->

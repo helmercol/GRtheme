@@ -8,18 +8,18 @@
 		?>
 		
 		<!-- Empieza el post -->
-		<div class="entry">
+		<article class="entry">
 		<h2><?php the_title(); ?></h2>
 		<?php the_content(); ?>
-		</div>
+		</article>
 		<!-- FIN post -->
 		
 		<?php else : ?>
 		
-		<div class="notfound">
+		<article class="notfound">
 			<h2>Not Found</h2>
 			<p>Sorry, but you are looking for something that is not here.</p>
-		</div>
+		</article>
 		<?php endif; ?>
 		
 	</div>

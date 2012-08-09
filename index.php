@@ -6,7 +6,7 @@
 		<!-- Start the Loop -->
 		 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
-		<div class="postindex">
+		<article class="postindex">
 		
 		<?php the_post_thumbnail('index'); ?>
 		
@@ -22,7 +22,7 @@
 		   <a class="info" href="<?php echo get_permalink(); ?>">Leer entrada</a>
 		 </div>
 		
-		</div><!-- Cerramos el div post -->
+		</article><!-- Cerramos el article -->
 		 
 		<!-- Finaliza en parte el loop, Si no se ecnuentran posts  mostramos un mensaje de error o advertencia. -->
 		 <?php endwhile; else: ?>

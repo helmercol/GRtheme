@@ -12,10 +12,10 @@
 		<?php the_post_thumbnail('post'); ?>
 		</div>
 		<h2><?php the_title(); ?></h2>
-		<div class="entry">
+		<article class="entry">
 		<div class="fecha">Art&iacute;culo publicado el <?php the_time('l, F j, Y') ?>. Guardado en la categor&iacute;a: <?php the_category(', ') ?></div>
 		<?php the_content(); ?>
-		</div>
+		</article>
 		<!-- end post -->
 		
 		<div class="redessociales">
