@@ -354,18 +354,19 @@ Version: 0.1
 		margin: 15px 0;
 	}
 	#content-full .entry img {
-		border: solid 8px #fff;
 		-webkit-box-shadow: 1px 1px 10px 1px #cccccc;
 		box-shadow: 1px 1px 10px 1px #cccccc;
 	}
 	#content-full .entry h2 {
+		background: none;
 		font-family: 'Dosis', sans-serif;
 		font-weight:200;
 		margin: 10px 0 30px 0;
-		font-size: 3em;
+		font-size: 1.8em;
 		color: #0095d9;
-		text-align: center;
-		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
+		padding: 0;
+		text-align: left;
+		text-shadow: none
 	}
 	#content-full .entry h2.full {
 		background: none;
@@ -402,7 +403,7 @@ Version: 0.1
 		font-size: 13px;
 		font-weight: bold
 	}
-	#content-full .entry ul {
+	#content-full .entry ul, #content-full .entry ol {
 		margin: 0 0 0 40px
 	}
 	#content-full .entry ul li {
@@ -558,7 +559,8 @@ Version: 0.1
 	#comments h2 {
 		font-size: 1.6em;
 		margin: 10px 0;
-		background: #00AEEF
+		background: #00AEEF;
+		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0
 	}
 	#comments h2 a {
 		color: #fff
