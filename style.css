@@ -406,7 +406,7 @@ Version: 0.1
 	#content-full .entry ul, #content-full .entry ol {
 		margin: 0 0 0 40px
 	}
-	#content-full .entry ul li {
+	#content-full .entry ul li, #content-full .entry ol li {
 		margin: 0 0 15px 0
 	}
 	#content-full .post img{ 
@@ -748,7 +748,7 @@ Version: 0.1
 		margin: 0 0 12px 0
  		}
 	/** FIN WIDGETS Footer **/
-		.notfound { 
+	.notfound { 
 		padding: 20px;
 		font-size: 1.4em;
 		color: #606060
@@ -763,6 +763,20 @@ Version: 0.1
 	.notfound ul li { 
 		float: left;
 		margin: 0 15px 0 0
+	}
+	.navigation {
+	clear: both;
+	margin: 10px 0 0 0;
+	padding: 10px 0 0 0;
+	font-size: 1.2em;
+	width: 100%;
+	text-align: center
+	}
+	.navigation .pages {
+	color: #777;
+	font-weight: bold;
+	margin: 0 15px 0 0;
+	width: 100%
 	}
 	/** FIN miscelanea **/
 	
@@ -784,6 +798,7 @@ Version: 0.1
 		#content-full, #content-archive, #content { width: 98%; margin: 2% auto 0 auto; padding: 0 1% }
 		#content .entry { width: auto; margin: 2% auto 1% auto; padding: 0 2% }
 		#content-full .entry { width: auto; margin: 2% auto 1% auto; padding: 1 }
+		#content-full .entry img { width: 100%; height: auto }
 		.thumbpost img { max-width: 100%; height: auto }
 		
 		.footer-widgets .box, .footer-widgets .box-last { display: inline-block; width:98%; margin: 1%; text-align: center }

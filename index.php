@@ -32,14 +32,15 @@
 		
 		 <!-- FIN The Loop -->
 		 <?php endif; ?>
-		
-	</div><!-- FIN Contenido -->
-	<div class="break"></div>
-	<div class="tweetimg">
-		<a href="http://twitter.com/helmercol" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/tweetimage.png" title="Seguir a @helmercol"/></a>
-	</div>
-	<div class="tweet">
-		<p><?php displayLatestTweet('helmercol'); ?></p>
-	</div>
+		 <?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
+		 
+		</div><!-- FIN Contenido -->
+		<div class="break"></div>
+		<div class="tweetimg">
+			<a href="http://twitter.com/helmercol" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/tweetimage.png" title="Seguir a @helmercol"/></a>
+		</div>
+		<div class="tweet">
+			<p><?php displayLatestTweet('helmercol'); ?></p>
+		</div>
 	
 <?php get_footer(); ?>
