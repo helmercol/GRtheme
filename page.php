@@ -17,8 +17,8 @@
 		<?php else : ?>
 		
 		<article class="notfound">
-			<h2>Not Found</h2>
-			<p>Sorry, but you are looking for something that is not here.</p>
+			<h2>No Encontrado</h2>
+			<p>Lo sentimos, pero no hemos encontrado lo que busca.</p>
 		</article>
 		<?php endif; ?>
 		

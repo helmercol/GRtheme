@@ -8,7 +8,7 @@ if ( function_exists('register_sidebar') )
 		'before_widget' => '<div class="box">',
         'after_widget' => '</div>',
     ));
-# Inicio Widegts para el pie de página
+# Inicio Widegts para el pie de pÃ¡gina
 # WIDGET: Footer Uno
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
@@ -89,7 +89,7 @@ function displayLatestTweet($twitterID){
 	$latest_tweet = fetch_rss("http://search.twitter.com/search.atom?q=from:" . $twitterID . "&rpp=1");
 	echo $latest_tweet->items[0]['atom_content'];
 }
-#Paginación de entradas
+#PaginaciÃ³n de entradas
 function wp_corenavi() {
   global $wp_query, $wp_rewrite;
   $pages = '';
@@ -99,11 +99,11 @@ function wp_corenavi() {
   $a['total'] = $max;
   $a['current'] = $current;
  
-  $total = 1; //1 - muestra el texto "Página N de N", 0 - para no mostrar nada
+  $total = 1; //1 - muestra el texto "PÃ¡gina N de N", 0 - para no mostrar nada
   $a['mid_size'] = 5; //cuantos enlaces a mostrar a izquierda y derecha del actual
   $a['end_size'] = 1; //cuantos enlaces mostrar al comienzo y al fin
-  $a['prev_text'] = '&laquo; Anterior'; //texto para el enlace "Página siguiente"
-  $a['next_text'] = 'Siguiente &raquo;'; //texto para el enlace "Página anterior"
+  $a['prev_text'] = '&laquo; Anterior'; //texto para el enlace "PÃ¡gina siguiente"
+  $a['next_text'] = 'Siguiente &raquo;'; //texto para el enlace "PÃ¡gina anterior"
  
   if ($max > 1) echo '<div class="navigation">';
   if ($total == 1 && $max > 1) $pages = '<span class="pages">P&aacute;gina ' . $current . ' de ' . $max . '</span>'."\r\n";

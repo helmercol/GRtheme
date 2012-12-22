@@ -16,23 +16,23 @@ Version: 0.1
 		text-align: left;
 	}
 	a {
-		text-decoration: none;
-		color: #0099FF;
 		-webkit-transition: all 0.2s linear;
-	   	-moz-transition: all 0.2s linear;
+		color: #0099FF;
+		text-decoration: none;
 	  	-o-transition: all 0.2s linear;
-	   	-ms-transition: all 0.2s linear;
 	  	transition: all 0.2s linear;
+	   	-moz-transition: all 0.2s linear;
+	   	-ms-transition: all 0.2s linear;
 	}
 	a:hover {
-		text-decoration: none;
+		-webkit-transition: all 0.2s linear;
 		color: #ccc;
 		margin: 0 auto;
-		-webkit-transition: all 0.2s linear;
-	   	-moz-transition: all 0.2s linear;
+		text-decoration: none;
 	  	-o-transition: all 0.2s linear;
-	   	-ms-transition: all 0.2s linear;
 	  	transition: all 0.2s linear;
+	   	-moz-transition: all 0.2s linear;
+	   	-ms-transition: all 0.2s linear;
 	}
 	img {
 		border: 0;
@@ -54,52 +54,52 @@ Version: 0.1
 	header .titulo {
 		color: #00aeef;
 		font-family: 'Dosis', sans-serif;
-		font-weight:400;
 		font-size: 5em;
+		font-weight:400;
+		margin: 20px auto 0 auto;
 		text-align: center;
-		margin: 20px auto 0 auto
 	}
 	header .descripcion { 
 		color: #ccc;
 		font-family: 'Dosis', sans-serif;
-		font-weight:200;
 		font-size: 1.8em;
+		font-weight:200;
+		margin: 5px auto 0 auto;
 		text-align: center;
-		margin: 5px auto 0 auto
 	}
 	header h1 {
-		font-size: 2em;
 		float: left;
+		font-size: 2em;
 		padding: 30px 20px;
 	}
 	header h1 a {
 		display: block;
-		width: auto;
 		height: auto;
 		outline: none;
+		width: auto;
 		}
 	/** nav **/
 	nav {
 		font-size: 1.4em;
 		font-weight:600;
 		height: 70px;
-		width: 100%;
 		margin: 30px auto 10px auto;
-		text-align:center
+		text-align:center;
+		width: 100%;
 	} 
 	
 	nav ul {
 		clear: both;
 		list-style-type: none;
+		margin: 0 auto;
 		text-align:center;
-		margin: 0 auto
 	}
 	nav ul li {
+		color: #0099FF;
 		float: left;
+		padding: 10px;
 		text-align: center;
 		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
-		color: #0099FF;
-		padding: 10px;
 		}
 	nav ul li a {
 		color: #0099FF;
@@ -107,30 +107,30 @@ Version: 0.1
 		padding: 10px;
 		}
 	nav ul li a:hover, nav ul li.current_page_item a {
+		-webkit-transition: all 0.2s linear;
 		background: #abe1fa;
 		border-radius: 10px;
 		color: rgba(0, 125, 197, 0.796875);
 		text-decoration: none;
-		-webkit-transition: all 0.2s linear;
-	   	-moz-transition: all 0.2s linear;
 	  	-o-transition: all 0.2s linear;
-	   	-ms-transition: all 0.2s linear;
 	  	transition: all 0.2s linear;
+	   	-moz-transition: all 0.2s linear;
+	   	-ms-transition: all 0.2s linear;
 	}
 	/** FIN nav **/
 	/** Sidebar **/
 	aside {
 		background: none;
-		width: 200px;
 		float: right;
-		margin: 40px 0 0 0
+		margin: 40px 0 0 0;
+		width: 200px;
 	}
 	aside .box h2 {
-		margin: 0 0 5px 0;
-		color: #0099FF;
-		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
-		font-size: 1.4em;
 		border-bottom: 1px dashed #fff;
+		color: #0099FF;
+		font-size: 1.4em;
+		margin: 0 0 5px 0;
+		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
 		}
 	aside .box  {
 		margin-bottom: 20px;
@@ -140,8 +140,8 @@ Version: 0.1
 		list-style-type: none;
 		}
 	aside ul li {
-		font-size: 1.1em;
 		border-bottom: 1px dotted #DCDCDC;
+		font-size: 1.1em;
 		line-height: 1.4em;
 		padding: 2px 0;
 		}
@@ -149,23 +149,23 @@ Version: 0.1
 		color: #007ee5;
 		}
 	aside ul li a:hover {
-		color: #ccc;
-		text-decoration: none;
-		margin: 0 0 0 5px;
 		-webkit-transition: all 0.2s linear;
-	   	-moz-transition: all 0.2s linear;
+		color: #ccc;
+		margin: 0 0 0 5px;
+		text-decoration: none;
 	  	-o-transition: all 0.2s linear;
-	   	-ms-transition: all 0.2s linear;
 	  	transition: all 0.2s linear;
+	   	-moz-transition: all 0.2s linear;
+	   	-ms-transition: all 0.2s linear;
 		}
 	/** FIN sidebar **/
 	/** Estilos footer **/
 	footer {
+		border-top: #c0ebfb dashed 1px;
 		clear: both;
-		padding: 20px 0 30px 0;
 		color: #707070;
 		margin: 20px 0 0 0;
-		border-top: #c0ebfb dashed 1px
+		padding: 20px 0 30px 0;
 	}
 	footer a {
 		color: #0099FF;
@@ -175,11 +175,11 @@ Version: 0.1
 		color: #ccc;
 	}
 	footer .creditos {
-		width: 100%;
 		font-family:Georgia, "Times New Roman", Times, serif;
 		font-size: 14px;
 		font-style:italic;
 		text-align: center;
+		width: 100%;
 	}
 	/** FIN footer **/
 	address { 
@@ -188,9 +188,9 @@ Version: 0.1
 	}
 	/** Fin etiquetas semanticas **/
 	.break {
+		clear: both;
 		font-size: 0;
 		width: 0; height: 0;
-		clear: both;
 	}
 	.alignleft {
 		float: left;
@@ -208,87 +208,87 @@ Version: 0.1
 	}
 	
 	#wrapper {
-		width: 980px;
 		margin: auto auto;
 		text-align: left;
+		width: 980px;
 	}
 
 	/** Contenido **/
 	/** Contenido inicio blog **/
 	.postindex {
+		box-shadow: 1px 1px 2px #ccc;
+		cursor: default;
 		float: left;
-		width: 320px;
 		margin: 0 3px 10px 0;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		box-shadow: 1px 1px 2px #ccc;
-		cursor: default;
+		width: 320px;
 	}	
 	.postindex img { 
+		-webkit-transition: all 0.2s linear;
+		border: 5px solid #f0f0f0;
 		display: block;
 		position: relative;
-		border: 5px solid #f0f0f0;
-		-webkit-transition: all 0.2s linear;
-	   	-moz-transition: all 0.2s linear;
 	  	-o-transition: all 0.2s linear;
-	   	-ms-transition: all 0.2s linear;
 	  	transition: all 0.2s linear;
+	   	-moz-transition: all 0.2s linear;
+	   	-ms-transition: all 0.2s linear;
 	}
 	.postindex .mask {
-		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-		filter: alpha(opacity=0);
-		opacity: 0;
-		background-color: rgba(0,174,239, 0.7);
-		-webkit-transition: all 0.4s ease-in-out;
 		-moz-transition: all 0.4s ease-in-out;
-		-o-transition: all 0.4s ease-in-out;
+		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
 		-ms-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		background-color: rgba(0,174,239, 0.7);
+		filter: alpha(opacity=0);
+		height: 245px;
+		left: 0;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
 		transition: all 0.4s ease-in-out;
 		width: 320px;
-		height: 245px;
-		position: absolute;
-		overflow: hidden;
-		top: 0;
-		left: 0
 	}
 	.postindex h2 {
-		text-transform: uppercase;
-		color: #fff;
-		text-align: center;
-		position: relative;
-		font-size: 1.1em;
-		padding: 10px 5px;
 		background: rgba(0,125,197, 0.8);
+		color: #fff;
+		font-size: 1.1em;
 		margin: 20px 0 0 0;
+		padding: 10px 5px;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
 	}
 	.postindex h2 a {
 		color: #fff
 	}
 	.postindex small {
 		color: #fff;
-		text-align: center;
-		margin: 0 auto;
 		font-family: Georgia, serif;
 		font-style: italic;
+		margin: 0 auto;
 		position: relative;
+		text-align: center;
 	}
 	.postindex p { 
-		font-family: Georgia, serif;
-		font-style: italic;
-		font-size: 1em;
-		position: relative;
 		color: #fff;
+		font-family: Georgia, serif;
+		font-size: 1em;
+		font-style: italic;
 		padding: 6px 15px;
-		text-align: center
+		position: relative;
+		text-align: center;
 	}
 	.postindex a.info{
-		display: inline-block;
-		text-decoration: none;
-		padding: 4px 14px;
 		background: #000;
+		box-shadow: 0 0 1px #000;
 		color: #fff;
-		box-shadow: 0 0 1px #000
+		display: inline-block;
+		padding: 4px 14px;
+		text-decoration: none;
 	}
 	.postindex a.info:hover {
     	box-shadow: 0 0 5px #000
@@ -319,19 +319,19 @@ Version: 0.1
 	
 	#content-full, #content-fullindex {
 		border-radius: 10px;
-		width: 100%;
 		float: left;
 		margin: 0 0 10px 0;
 		padding: 15px 5px;
+		width: 100%;
 	}
 	#content-full h2 {
 		background: transparent url(images/pattern.png);
+		color: #fff;
 		font-family: 'Dosis', sans-serif;
+		font-size: 3em;
 		font-weight:400;
 		margin: -103px 0 0 0;
-		font-size: 3em;
 		padding: 20px;
-		color: #fff;
 		text-align: center;
 		text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 2px;
 	}
@@ -359,24 +359,24 @@ Version: 0.1
 	}
 	#content-full .entry h2 {
 		background: none;
+		color: #0095d9;
 		font-family: 'Dosis', sans-serif;
+		font-size: 1.8em;
 		font-weight:200;
 		margin: 10px 0 30px 0;
-		font-size: 1.8em;
-		color: #0095d9;
 		padding: 0;
 		text-align: left;
-		text-shadow: none
+		text-shadow: none;
 	}
 	#content-full .entry h2.full {
 		background: none;
-		font-family: 'Dosis', sans-serif;
-		font-weight:200;
-		font-size: 3em;
-		margin: 10px 0 30px 0;
-		line-height: 1.2em;
-		padding: 10px;
 		color: #0095d9;
+		font-family: 'Dosis', sans-serif;
+		font-size: 3em;
+		font-weight:200;
+		line-height: 1.2em;
+		margin: 10px 0 30px 0;
+		padding: 10px;
 		text-align: center;
 		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
 	}
@@ -384,8 +384,8 @@ Version: 0.1
 		border-bottom: 1px #ccc dotted;
 		color: #747474;
 		font-family: Georgia, "Times New Roman", Times, serif;
-		font-style:italic;
 		font-size: 14px;
+		font-style:italic;
 		margin: 0 0 20px 0;
 		padding: 0 0 20px 0;
 		text-align: center;
@@ -399,9 +399,9 @@ Version: 0.1
 		color: #ccc;
 	}
 	#content-full .entry h4 {
-		margin: 30px 0 15px 0;
 		font-size: 13px;
-		font-weight: bold
+		font-weight: bold;
+		margin: 30px 0 15px 0;
 	}
 	#content-full .entry ul, #content-full .entry ol {
 		margin: 0 0 0 40px
@@ -410,15 +410,15 @@ Version: 0.1
 		margin: 0 0 15px 0
 	}
 	#content-full .post img{ 
-		text-align: center;
 		border: 5px #fff solid; 
+		text-align: center;
 	}
 	#content {
 		border-radius: 10px;
-		width: 730px;
 		float: left;
-		padding: 5px 10px;
 		margin: 20px 0 0 0;
+		padding: 5px 10px;
+		width: 730px;
 	}
 	#content-archive {
 		width: 980px;
@@ -429,87 +429,87 @@ Version: 0.1
 	}
 	#content .post {
 		background: #dcefff;
+		border-bottom: 1px #0062be dotted;
 		float: left;
-		width: 620px;
 		margin: 10px 0;
 		padding: 0 5px 20px 5px;
-		border-bottom: 1px #0062be dotted;
 		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
+		width: 620px;
 	}
 	#content .post h2 {
 		font-size: 1em;
-		text-transform: uppercase;
 		margin-bottom: 5px;
+		text-transform: uppercase;
 	}
 	#content .post .thumb {
-		width: 150px; height: 115px;
-		overflow: hidden;
 		margin-bottom: 5px;
+		overflow: hidden;
+		width: 150px; height: 115px;
 	}
 	#content .post .thumb img {
 		width: 150px;
 	}
 	#content .post h3 {
+		color: #00aeef;
 		font-size: 1.2em;
 		margin-bottom: 10px;
-		color: #00aeef;
 	}
 	#content .post p {
 		line-height: 1.4em;
 	}
 	#content .post .readmore {
+		background: url(images/readmore.gif) no-repeat 0 0;
+		display: block;
+		margin: 10px 0;
+		outline: none;
 		text-indent: -9999px;
 		width: 99px; height: 17px;
-		outline: none;
-		background: url(images/readmore.gif) no-repeat 0 0;
-		margin: 10px 0;
-		display: block;
 	}
 	#content h2.title {		
-		margin: 10px 0 5px 0;
-		font-size: 1.6em;
 		color: #0095d9;
+		font-size: 1.6em;
+		margin: 10px 0 5px 0;
 		text-align: center;
 		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
 	}
 	#content-archive .archive {
-		width: 48%;
 		float: left;
 		margin: 0 1%;
 		min-height: 140px;
+		width: 48%;
 	}
 	#content-archive .archive img {
-		width: 90px;
 		float: left;
 		margin: 5px 5px 5px 0;
+		width: 90px;
 	}
 	#content-archive .archive h3 {
 		color: #00aeef;
 	}
 	#content-archive .archive p {
+		color: #707070;
 		line-height: 1.2em;
 		margin-bottom: 5px;
-		color: #707070;
 	}
 	#content .entry {
+		border-bottom: 1px #c7eafb dotted;
+		color: #808080;
 		margin: 10px 0;
 		padding: 0 0 20px 0;
-		color: #808080;
-		border-bottom: 1px #c7eafb dotted
 	}
 	#content .entry h2 {
-		font-family: 'Dosis', sans-serif;
-		margin: 0 0 20px 0;
-		font-size: 2.4em;
 		color: #0095d9;
+		font-family: 'Dosis', sans-serif;
+		font-size: 2.4em;
+		margin: 0 0 20px 0;
 		text-align: center;
 		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
 	}
 	#content .entry .fecha {
 		color: #00a1e4;
 		font-family: Georgia, "Times New Roman", Times, serif;
-		font-style:italic;
 		font-size: 12px;
+		font-style:italic;
 		margin: 4px 0 20px 0;
 		text-align: center;
 		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
@@ -529,23 +529,23 @@ Version: 0.1
 	#content .entry blockquote, #content-full .entry blockquote {
 		background-color: #00aeef;
 		border-radius: 15px;
-		font-family: Georgia, "Times New Roman", Times, serif;
-		font-style:italic;
-		font-size: 1em;
 		color: #fff;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 1em;
+		font-style:italic;
 		line-height: 1.2em;
-		padding: 20px 25px;
 		margin: 10px auto;
+		padding: 20px 25px;
 		text-align:justify;
-		width:85%
+		width:85%;
 	}
 	#content .entry h3, #content .entry h4, #content .entry h5, #content .entry h6 {
 		font-size: 1.2em;
 		margin-bottom: 5px;
 	}
 	#postnav {
-		padding: 10px;
 		font-weight: bold;
+		padding: 10px;
 	}
 	/** END content **/
 	/* COMENTARIOS */
@@ -557,21 +557,21 @@ Version: 0.1
 		text-decoration: none;
 	}
 	#comments h2 {
+		background: #00AEEF;
 		font-size: 1.6em;
 		margin: 10px 0;
-		background: #00AEEF;
-		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0
+		text-shadow: rgba(255, 255, 255, 0.246094) 0 -1px 0;
 	}
 	#comments h2 a {
 		color: #fff
 	}
 	#comments p {
 		background: url(images/bg-full.png);
+		clear: both;
 		color: #707070;
-		padding: 10px 20px;
 		font-size: 1.4em;
 		line-height: 1.5em;
-		clear: both
+		padding: 10px 20px;
 	}
 	#comments .reply {
 		margin: 10px 0;
@@ -580,10 +580,10 @@ Version: 0.1
 		list-style: none
 	}
 	#comments .children {
-		float:right;
-		width:95%;
 		clear: both;
-		list-style: none
+		float:right;
+		list-style: none;
+		width:95%;
 	}
 	#comments #respond {
 		clear: both
@@ -598,38 +598,38 @@ Version: 0.1
 		width: 99%
 		}
 	#comments form input {
-		width: 99%;
 		border: 1px dotted #ccc;
 		height: 40px;
+		width: 99%;
 		}
 	#comments form textarea {
-		width: 99%;
-		padding: 4px 4px !important;
 		border: 1px dotted #ccc;
+		padding: 4px 4px !important;
+		width: 99%;
 		}
 	#comments form button {
 		background: #00AEEF;
 		color: #fff;
-		font-size: 1em;
 		font-family: 'Dosis', sans-serif;
+		font-size: 1em;
 		padding: 8px;
-		width: 100%
+		width: 100%;
 		}
 	.comment-author { 
 		color: #707070;
+		float: left;
 		font-size: 2em;
 		font-style: normal;
-		float: left;
-		margin: 0 0 10px 0
+		margin: 0 0 10px 0;
 	}
 	.comment-author a { 
 		font-style: normal
 	}
 	.comment-meta { 
+		float: right;
 		font-size: 1.6em;
 		font-style: normal;
-		float: right;
-		margin: 0 0 10px 0
+		margin: 0 0 10px 0;
 	}
 	.fn { 
 		font-style: normal;
@@ -640,10 +640,10 @@ Version: 0.1
 		color: #ff0000;
 	}
 	h2.title {
-		font-size: 1em !important;
-		text-transform: uppercase;
-		padding: 10px;
 		color: #565656;
+		font-size: 1em !important;
+		padding: 10px;
+		text-transform: uppercase;
 	}
 	.notfound {
 		padding: 40px;
@@ -670,32 +670,54 @@ Version: 0.1
 	.tweet { 
 		background: url(images/reticular_tissue.png);
 		border-radius: 15px;
-		color: #707070;
-		padding: 20px;
-		font-size: 2em;
-		text-align: center;
 		box-shadow: 1px 1px 2px #ccc;
+		color: #707070;
+		font-size: 2em;
 		margin: -20px auto 0 auto;
+		padding: 20px;
+		text-align: center;
 	}
 	
 	.redessociales {
-		padding: 20px;
 		background: url(images/reticular_tissue.png);
 		border-radius: 0 0 10px 10px;
-		text-align: center
+		padding: 20px;
+		text-align: center;
 	}
 	
-	.social { list-style:none }
-	.social li { display:inline; float:left; margin: 0 20px 0 0 }
-	.social li a { display:block; width:48px; height:48px; position:relative; }
-	.social li a strong { position:absolute; left:20px; top:-1px;
-	   text-shadow:1px 1px 0 rgba(0, 0, 0, 0.75); background-color:rgba(0, 0, 0, 0.7);
-	   border-radius:3px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	.social { 
+		list-style:none
+	}
+	.social li { 
+		display:inline; 
+		float:left; 
+		margin: 0 20px 0 0
+	 }
+	.social li a { 
+		display:block; 
+		width:48px; height:48px; 
+		position:relative; 
+	}
+	.social li a strong { 
+		left:20px; top:-1px;
+		position:absolute; 
+	  	border-radius:3px; 
+	   	background-color:rgba(0, 0, 0, 0.7);
+	   	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	   	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.75);
 	}
 	 
-	li.compartir { font-size: 1.6em; color: #707070; margin: 5px 20px 5px 0 }
-	li.twitter { background-image:url("images/twitter.png"); }
-	li.facebook{ background-image:url("images/facebook.png"); }
+	li.compartir { 
+		color: #707070; 
+		font-size: 1.6em; 
+		margin: 5px 20px 5px 0; 
+	}
+	li.twitter { 
+		background-image:url("images/twitter.png") 
+	}
+	li.facebook{ 
+		background-image:url("images/facebook.png") 
+	}
 	
 	#css3:hover li { opacity:0.2; }
 	
@@ -722,19 +744,19 @@ Version: 0.1
 	}
 	.footer-widgets .box { 
 		float:left;
-		width:310px;
 		margin: 10px 24px 10px 0; 
+		width:310px;
 	}
 	.footer-widgets .box-last { 
 		float:left;
-		width:310px;
 		margin: 10px 0; 
+		width:310px;
 	}
 	.footer-widgets h2 { 
-		font-size: 1.4em;
-		text-align: center;
 		border-bottom: 1px #ccc dotted;
-		padding: 5px 0 10px 0
+		font-size: 1.4em;
+		padding: 5px 0 10px 0;
+		text-align: center;
 	}
 	.footer-widgets .box p, .footer-widgets .box-last p { 
 		margin: 0 0 0 25px;
@@ -749,9 +771,9 @@ Version: 0.1
  		}
 	/** FIN WIDGETS Footer **/
 	.notfound { 
-		padding: 20px;
+		color: #606060;
 		font-size: 1.4em;
-		color: #606060
+		padding: 20px;
 		}
 	.notfound h2 { 
 		font-size: 1.6em;
@@ -766,11 +788,11 @@ Version: 0.1
 	}
 	.navigation {
 	clear: both;
+	font-size: 1.2em;
 	margin: 10px 0 0 0;
 	padding: 10px 0 0 0;
-	font-size: 1.2em;
+	text-align: center;
 	width: 100%;
-	text-align: center
 	}
 	.navigation .pages {
 	color: #777;

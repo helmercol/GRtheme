@@ -18,15 +18,15 @@
 		<?php endwhile; ?>
 		
 		<p id="postnav">
-			<?php next_posts_link('&laquo; Older Entries'); ?> &nbsp; 
-			<?php previous_posts_link('Newer Entries &raquo;'); ?>
+			<?php next_posts_link('&laquo; Entradas antiguas'); ?> &nbsp; 
+			<?php previous_posts_link('Entradas nuevas &raquo;'); ?>
 		</p>
 		
 		<?php else : ?>
 		
 		<div class="notfound">
 			<h2>No encontrado</h2>
-			<p>Lo sentimos, no hemos encontrado la p&aacute;gina que busca. Volver al <a href="/">Inicio</a></p>
+			<p>Lo sentimos, no hemos encontrado la página que busca. Volver al <a href="/">Inicio</a></p>
 			<p>
 			
 			<h2>Entradas recientes</h2>

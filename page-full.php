@@ -16,16 +16,18 @@ get_header(); ?>
 		<article class="entry">
 		<h2 class="full"><?php the_title(); ?></h2>
 		<?php the_content(); ?>
-		</article><!-- FIN página -->
+		</article>
+		<!-- FIN página -->
 		
 		<?php else : ?>
 		
 		<article class="notfound">
-			<h2>Not Found</h2>
-			<p>Sorry, but you are looking for something that is not here.</p>
+			<h2>No Encontrado</h2>
+			<p>Lo sentimos, pero no hemos encontrado lo que busca.</p>
 		</article>
 		<?php endif; ?>
 		
-	</div><!-- FIN contenido -->
+	</div>
+	<!-- FIN contenido -->
 	
 <?php get_footer(); ?>

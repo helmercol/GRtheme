@@ -3,9 +3,10 @@
 	<!-- Contenido del sitio -->
 	<div id="content-fullindex">
 		
-		<!-- Start the Loop -->
+		<!-- The Loop -->
 		 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		
+		<!-- Empieza el artículo -->
 		<article class="postindex">
 		
 		<?php the_post_thumbnail('index'); ?>
@@ -17,25 +18,29 @@
 		 <!-- Mostramos la fecha del post. -->
 		 <small>Publicado el <?php the_time('l, F j, Y') ?></small>
 		 
-		 <!-- Mostramos el contnido del post. -->
+		 <!-- Mostramos el contenido del post. -->
 		   <p><?php the_excerpt(); ?></p>
 		   <a class="info" href="<?php echo get_permalink(); ?>">Leer entrada</a>
 		 </div>
 		
-		</article><!-- Cerramos el article -->
+		</article>
+		<!-- Fin del artículo -->
 		 
-		<!-- Finaliza en parte el loop, Si no se ecnuentran posts  mostramos un mensaje de error o advertencia. -->
+		<!-- Finaliza en parte el loop, Si no se encuentran posts  mostramos un mensaje de error o advertencia. -->
 		 <?php endwhile; else: ?>
 		
 		 <!-- Mensaje que se muestra si no hay posts -->
-		 <p>Lo sentimos, no hemos encontrado la p&aacute;gina que busca.</p>
+		 <p>Lo sentimos, no hemos encontrado la página que busca.</p>
 		
 		 <!-- FIN The Loop -->
 		 <?php endif; ?>
 		 <?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
 		 
-		</div><!-- FIN Contenido -->
+		</div>
+		<!-- FIN Contenido -->
+
 		<div class="break"></div>
+		
 		<div class="tweetimg">
 			<a href="http://twitter.com/helmercol" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/tweetimage.png" title="Seguir a @helmercol"/></a>
 		</div>

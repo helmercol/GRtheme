@@ -26,13 +26,13 @@
 		<div class="alignleft"><?php previous_comments_link() ?></div>
 		<div class="alignright"><?php next_comments_link() ?></div>
 	</div>
- <?php else : // this is displayed if there are no comments so far ?>
+ <?php else : // esto se muestra si no hay ningún comentario hasta el momento ?>
 
 	<?php if ('open' == $post->comment_status) : ?>
-		<!-- If comments are open, but there are no comments. -->
+		<!-- Si los comentarios están abiertos, pero no hay. -->
 
 	 <?php else : // comentarios cerrados ?>
-		<!-- If comments are closed. -->
+		<!-- Si los comentarios están cerraods. -->
 		<p class="nocomments">Comentarios cerrados.</p>
 
 	<?php endif; ?>
@@ -72,8 +72,6 @@
 
 <?php endif; ?>
 
-<!--<p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>-->
-
 <p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
 
 <p><button name="submit" type="submit" id="submit">Enviar comentario</button>
@@ -83,25 +81,25 @@
 
 </form>
 
-<?php endif; // If registration required and not logged in ?>
+<?php endif; // Si es necesario el registro y no lo está ?>
 </div>
 
-<?php endif; // if you delete this the sky will fall on your head ?>
+<?php endif; ?>
 
 <?php else: ?>
 
-<?php // Do not delete these lines
+<?php
 if ('comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	die ('Please do not load this page directly. Thanks!');
-	if (!empty($post->post_password)) { // if there's a password
-		if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it doesn't match the cookie
+	if (!empty($post->post_password)) { // Si esto es un password
+		if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  //  y no está de acuerdo con la cookie
 			?>
-			<p>Entrada protegida por contrase&ntilde;a. Por favor, introduzca la contrase&ntilde;a para poder ver los comentarios.<p>
+			<p>Entrada protegida por contraseña. Por favor, introduzca la contraseña para poder ver los comentarios.<p>
 			<?php
 			return;
 		}
 	}
-/* This variable is for alternating comment background */
+/* Fondo de los comentarios */
 $oddcomment = 'comment1';
 ?>
 <h2>Comentarios<?php comments_number('', ' (1)', ' (%)' );?></h2> 
@@ -122,7 +120,7 @@ $oddcomment = 'comment1';
 	<br class="break" />
 	<?php comment_text() ?>
 </div>
-<?php endforeach; /* end for each comment */ ?>
+<?php endforeach; /* fin de cada comentario */ ?>
 <?php endif; ?>
 <h2 id="respond">Escribir un comentario</h2>
 <?php if ('open' == $post->comment_status) : ?>

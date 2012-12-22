@@ -7,16 +7,16 @@
 		if (have_posts()) : the_post();
 		?>
 		
-		<!-- begin post -->
+		<!-- Empieza el post -->
 		<div class="thumbpost">
 		<?php the_post_thumbnail('post'); ?>
 		</div>
 		<h2><?php the_title(); ?></h2>
 		<article class="entry">
-		<div class="fecha">Art&iacute;culo publicado el <?php the_time('l, F j, Y') ?>. Guardado en la categor&iacute;a: <?php the_category(', ') ?></div>
+		<div class="fecha">Artículo publicado el <?php the_time('l, F j, Y') ?>. Guardado en la categoría: <?php the_category(', ') ?></div>
 		<?php the_content(); ?>
 		</article>
-		<!-- end post -->
+		<!-- Fin del post -->
 		
 		<div class="redessociales">
 		<ul class="social" id="css3">
@@ -24,12 +24,12 @@
 			<p>Compartir:</p>
 		</li>
 		   <li class="twitter">
-			  <a href="http://twitter.com/home?status=<?php the_title(); ?> <?php the_permalink(); ?> v&iacute;a @helmercol" title="Env&iacute;a este art&iacute;culo a Twitter!" target="_blank">
+			  <a href="http://twitter.com/home?status=<?php the_title(); ?> <?php the_permalink(); ?> vía @helmercol" title="Envía este artículo a Twitter!" target="_blank">
 				 <strong>twitter</strong>
 			  </a>
 		   </li>
 		   <li class="facebook">
-			  <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="Env&iacute;a este art&iacute;culo a facebook!" target="_blank">
+			  <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="Envía este artículo a facebook!" target="_blank">
 				 <strong>facebook</strong>
 			  </a>
 		   </li>
@@ -44,8 +44,8 @@
 		<?php else : ?>
 		
 		<div class="notfound">
-			<h2>Not Found</h2>
-			<p>Sorry, but you are looking for something that is not here.</p>
+			<h2>No Encontrado</h2>
+			<p>Lo sentimos, no hemos encontrado la página que busca.</p>
 		</div>
 		<?php endif; ?>
 		

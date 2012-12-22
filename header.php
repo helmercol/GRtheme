@@ -27,15 +27,16 @@
 	<header>
 		<!-- Zona para logo -->
 			<div class="logo">
-				<!--<a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" title="Inicio"></a>-->
-			</div><!-- fin logo -->
+				<!-- Descomentar para mostrar el logo <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" title="Inicio"></a>-->
+			</div>
+		<!-- fin logo -->
 			<div class="titulo">
 				<a href="/"><?php bloginfo('name'); ?></a>
 			</div>
 			<div class="descripcion">
 				<?php bloginfo('description'); ?>
 			</div>
-		<!-- Navegación -->
+		<!-- Navegación // Descomentar para usar el menú-->
 		<!--<nav>
 			<ul>
 				<?php wp_nav_menu( array( 'theme_location' => 'nombre-menu1' )); ?>
@@ -43,4 +44,5 @@
 		</nav>-->
 		<!-- FIN navegación -->
 	
-	</header><!-- FIN header -->
+	</header>
+	<!-- FIN header -->
