@@ -5,14 +5,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width" />
 	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Dosis:200,400' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
 
 	
@@ -36,13 +29,13 @@
 			<div class="descripcion">
 				<?php bloginfo('description'); ?>
 			</div>
-		<!-- Navegación // Descomentar para usar el menú-->
+		<!-- NavegaciÃ³n // Descomentar para usar el menÃº-->
 		<!--<nav>
 			<ul>
 				<?php wp_nav_menu( array( 'theme_location' => 'nombre-menu1' )); ?>
 			</ul>
 		</nav>-->
-		<!-- FIN navegación -->
+		<!-- FIN navegaciÃ³n -->
 	
 	</header>
 	<!-- FIN header -->

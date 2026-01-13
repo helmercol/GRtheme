@@ -16,11 +16,11 @@
 		 <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Enlace permanente <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 		 
 		 <!-- Mostramos la fecha del post. -->
-		 <small>Publicado el <?php the_time('l, F j, Y') ?></small>
+		 <small><?php printf( esc_html__( 'Publicado el %s', 'grtheme' ), get_the_time( 'l, F j, Y' ) ); ?></small>
 		 
 		 <!-- Mostramos el contenido del post. -->
 		   <p><?php the_excerpt(); ?></p>
-		   <a class="info" href="<?php echo get_permalink(); ?>">Leer entrada</a>
+		   <a class="info" href="<?php echo get_permalink(); ?>"><?php esc_html_e( 'Leer entrada', 'grtheme' ); ?></a>
 		 </div>
 		
 		</article>
@@ -30,7 +30,7 @@
 		 <?php endwhile; else: ?>
 		
 		 <!-- Mensaje que se muestra si no hay posts -->
-		 <p>Lo sentimos, no hemos encontrado la página que busca.</p>
+		 <p><?php esc_html_e( 'Lo sentimos, no hemos encontrado la página que busca.', 'grtheme' ); ?></p>
 		
 		 <!-- FIN The Loop -->
 		 <?php endif; ?>
@@ -41,11 +41,4 @@
 
 		<div class="break"></div>
 		
-		<div class="tweetimg">
-			<a href="http://twitter.com/helmercol" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/tweetimage.png" title="Seguir a @helmercol"/></a>
-		</div>
-		<div class="tweet">
-			<p><?php displayLatestTweet('helmercol'); ?></p>
-		</div>
-	
 <?php get_footer(); ?>

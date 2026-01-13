@@ -34,7 +34,7 @@
 <!-- Inicio footer -->
 	<footer>
 		<div class="creditos">
-			<p>GRtheme funciona con <a href="http://wordpress.org/" target="_blank">WordPress</a> Theme por <a href="http://twitter.com/helmercol">@helmercol</a> y <a href="http://hgrdesign.es">HGR Design</a></p>
+			<p><?php printf( wp_kses_post( __( 'GRtheme funciona con <a href="https://wordpress.org/" target="_blank">WordPress</a> Theme por <a href="https://twitter.com/helmercol">@helmercol</a> y <a href="https://hgrdesign.es">HGR Design</a>', 'grtheme' ) ) ); ?></p>
 		</div>
 	</footer>
 <!-- FIN footer -->
