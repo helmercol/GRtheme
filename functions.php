@@ -60,7 +60,7 @@ function dp_gravatar($size=50, $attributes='', $author_email='') {
 			comment_author_email();
 			$author_email = ob_get_clean();
 		}
-		$gravatar_url = 'http://www.gravatar.com/avatar/' . md5(strtolower($author_email)) . '?s=' . $size . '&amp;d=' . dp_settings('gravatar_fallback');
+		$gravatar_url = 'https://www.gravatar.com/avatar/' . md5(strtolower($author_email)) . '?s=' . $size . '&amp;d=' . dp_settings('gravatar_fallback');
 		?><img src="<?php echo $gravatar_url; ?>" <?php echo $attributes ?>/><?php
 	}
 }
@@ -83,12 +83,6 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'index', 310, 235, true );
 add_image_size( 'post', 980, 300, true );
 
-#tweets en index
-function displayLatestTweet($twitterID){
-	include_once(ABSPATH.WPINC.'/rss.php');
-	$latest_tweet = fetch_rss("http://search.twitter.com/search.atom?q=from:" . $twitterID . "&rpp=1");
-	echo $latest_tweet->items[0]['atom_content'];
-}
 #Paginación de entradas
 function wp_corenavi() {
   global $wp_query, $wp_rewrite;
@@ -119,4 +113,28 @@ array(
 )
 );
 }
+
+function grtheme_setup() {
+	load_theme_textdomain( 'grtheme', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'grtheme_setup' );
+
+function grtheme_enqueue_assets() {
+	wp_enqueue_style(
+		'grtheme-fonts',
+		'https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap',
+		array(),
+		null
+	);
+	wp_enqueue_style( 'grtheme-style', get_stylesheet_uri(), array( 'grtheme-fonts' ), null );
+}
+add_action( 'wp_enqueue_scripts', 'grtheme_enqueue_assets' );
+
+function grtheme_resource_hints( $urls, $relation_type ) {
+	if ( 'preconnect' === $relation_type ) {
+		$urls[] = 'https://fonts.gstatic.com';
+	}
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'grtheme_resource_hints', 10, 2 );
 ?>
